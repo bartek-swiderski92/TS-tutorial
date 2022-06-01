@@ -11,5 +11,11 @@ numbers.forEach(n => n.valueOf());
 let user = [1, 'Mosh'];
 ;
 let mySize = 2;
-console.log(mySize);
+function calculateTax(income, taxYear = 2022) {
+    if (taxYear < 2022) {
+        return income * 1.2;
+    }
+    return income * 1.3;
+}
+calculateTax(123);
 //# sourceMappingURL=index.js.map
